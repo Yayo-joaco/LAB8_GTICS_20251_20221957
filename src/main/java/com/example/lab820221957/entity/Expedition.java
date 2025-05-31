@@ -17,11 +17,11 @@ public class Expedition {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
-    private BigInteger id;
+    private BigInteger expeditionID;
     @Column(name = "nombre_mision", nullable = false)
     private String nombreMision;
     @ManyToOne
-    @JoinColumn(name = "id")
+    @JoinColumn(name = "planeta_destino_id")
     private Planet planet;
     @Column(name = "fecha_lanzamiento", nullable = false)
     private LocalDate fechaLanzamiento;

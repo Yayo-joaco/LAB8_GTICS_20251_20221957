@@ -17,7 +17,7 @@ public class CrewMember {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
-    private BigInteger id;
+    private BigInteger crewID;
     @Column(name = "nombre_completo", nullable = false)
     private String nombreCompleto;
     @Column(name = "especialidad", nullable = false)
